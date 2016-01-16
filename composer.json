@@ -8,7 +8,7 @@
     "phpunit/phpunit": "~4.1"
   },
   "autoload":{
-    "psr-4": {"phpninjas\\Mnemonics\\":"src/","phpninjas\\Mnemonics\\Test":"test/"}
+    "psr-4": {"phpninjas\\Mnemonics\\":"src/","phpninjas\\Mnemonics\\Test\\":"test/"}
   }
 
 }
