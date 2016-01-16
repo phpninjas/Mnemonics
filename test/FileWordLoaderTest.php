@@ -16,7 +16,7 @@ class FileWordLoaderTest extends \PHPUnit_Framework_TestCase
 
     public function testLoadAllInLoop() {
 
-        $fileWordLoader = new FileWordLoader("test.txt");
+        $fileWordLoader = new FileWordLoader(__DIR__."/test.txt");
         while($word = $fileWordLoader()){
             $words[] = $word;
         }
@@ -35,7 +35,7 @@ class FileWordLoaderTest extends \PHPUnit_Framework_TestCase
 
     public function testRewind(){
 
-        $fileWordLoader = new FileWordLoader("test.txt");
+        $fileWordLoader = new FileWordLoader(__DIR__."/test.txt");
         $first = $fileWordLoader();
         $fileWordLoader->rewind();
         $second = $fileWordLoader();
@@ -45,7 +45,7 @@ class FileWordLoaderTest extends \PHPUnit_Framework_TestCase
 
     public function testLinesAreTrimmed(){
 
-        $fileWordLoader = new FileWordLoader("test.txt");
+        $fileWordLoader = new FileWordLoader(__DIR__."/test.txt");
         $first = $fileWordLoader();
         $this->assertThat(preg_match("/\n/", $first), $this->equalTo(0));
     }
