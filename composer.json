@@ -1,0 +1,14 @@
+{
+  "author":"James Turner",
+  "name":"phpninjas/mnemonics",
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "~4.1"
+  },
+  "autoload":{
+    "psr-4": {"phpninjas\\Mnemonics\\":"src/","phpninjas\\Mnemonics\\Test":"test/"}
+  }
+
+}
