@@ -1,6 +1,15 @@
 {
-  "author":"James Turner",
+  "minimum-stability": "stable",
   "name":"phpninjas/mnemonics",
+  "description": "A library for generating mnemonics from byte strings.",
+  "keywords": ["mnemonics","bitcoin"],
+  "homepage": "https://github.com/phpninjas/Mnemonics",
+  "license": "Apache",
+  "authors": [
+      {
+          "name": "James Turner"
+      }
+  ],
   "require": {
     "php": ">=5.5"
   },
@@ -8,7 +17,10 @@
     "phpunit/phpunit": "~4.1"
   },
   "autoload":{
-    "psr-4": {"phpninjas\\Mnemonics\\":"src/","phpninjas\\Mnemonics\\Test\\":"test/"}
+    "psr-4": {"phpninjas\\Mnemonics\\":"src/"}
+  },
+  "autoload-dev":{
+    "psr-4": {"phpninjas\\Mnemonics\\Test\\":"test/"}
   }
 
 }
